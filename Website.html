@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>TOGETHER</title>
+	<link rel="stylesheet" href="website.css">
+  
+
+</head>
+
+<body>
+
+<header>
+  
+        <h1>TOGETHER</h1>
+        <h4>We will bring a change</h4>
+        
+</header>
+
+<div class="navbar">
+<a href="website.html" >Home</a>
+<a href="#Register/Sign In" alt="Register">Register/Sign In</a>
+<a href="#" >Cart</a>
+
+
+<div class="dropdown">
+  <button onclick="myFunction1()" class="dropbtn">Support</button>
+  <div id="Support" class="dropdown-content">
+    <a href="#">Faq's</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Resources</button>
+  <div id="Resources" class="dropdown-content">
+    <a href="#">Overview</a>
+    <a href="#">Do's and Don's</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction4()" class="dropbtn">Reminder</button>
+  <div id="Reminder" class="dropdown-content">
+    <a href="#">Medics</a>
+    <a href="#">Appointments</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction5()" class="dropbtn">Account</button>
+  <div id="Account" class="dropdown-content">
+    <a href="#Register/Sign In">Login</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction2()" class="dropbtn">Book</button>
+  <div id="Book" class="dropdown-content">
+    <a href="#">Registered Doctor</a>
+    <a href="#">Other Doctor</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction3()" class="dropbtn">Chat</button>
+  <div id="Chat" class="dropdown-content">
+    <a href="#">Registered Doctor</a>
+    <a href="#">Other Doctor</a>
+  </div>
+</div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("Resources").classList.toggle("show");
+}
+function myFunction1() {
+  document.getElementById("Support").classList.toggle("show");
+}
+
+function myFunction2() {
+  document.getElementById("Book").classList.toggle("show");
+}
+
+function myFunction3() {
+  document.getElementById("Chat").classList.toggle("show");
+}
+
+function myFunction4() {
+  document.getElementById("Reminder").classList.toggle("show");
+}
+
+function myFunction5() {
+  document.getElementById("Account").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    <main>
+      <h2>Add/Edit Doctors</h2>
+        <section>
+          <a href="#"><img src="Doctors.png" height ="250" width="500" alt="Add doctors" ></a> 
+        </section>
+        <section>
+          <h2>Add/Edit Readings</h2>
+          <a href="1113.xlsx"><img src="Add.png" height ="250" width="500" alt="records" ></a> 
+        </section>
+
+        <section>
+          <h2>Get in touch with doctors</h2>
+          <img src="Chat.png" height ="250" width="500" alt="chat" >    
+        </section>
+
+        <section>
+          <h2>Video Call </h2>
+          <a href="callto:+919680590636">call</a>
+           <img src="Video call.png" height ="250" width="500" alt="Video call" >
+        </section>
+
+        <section>
+          <a id="Register/Sign In"><h2>Register/Sign In </h2></a>
+          
+          <figcaption><h3>PATIENT</h3></figcaption>
+          <a href="http://localhost:8080/Hackathon/login_PATIENT.php"><img src="Patient.png" height ="200" width="250" alt="Video call" ></a>
+          <figcaption><h3>DOCTOR</h3></figcaption>
+          <a href="http://localhost:8080/Hackathon/login_DOC.php"><img src="Doc.png" height ="200" width="250" alt="Video call" ></a>
+          
+        </section>
+
+        <section>
+            <h2>
+                Contact Us
+            </h2>
+            <h3>Simarjeet Kaur Bhatia</h3>
+            <a href="https://github.com/simarjeet30">Github</a>
+            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEF63n5HIzuQAAAAX5U3qNAS1-GcR_r-xVVF7ilSRQCnJF1edcRSfkYZSXzhouCcslZ8S4JWVY1rrMr6uMeLKp9-3bCLJytbrQPtb7LfwVVFeigIdS2sNuI-grFy8cv5qAFUk8=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsimarjeet-kaur-5857781b9">LinkedIn</a>
+            <a href="https://devfolio.co/@Simarjeet30">Devfolio</a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" target="_blank">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+    </footer>
+</body>
+</html>
